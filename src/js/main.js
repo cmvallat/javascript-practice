@@ -17,6 +17,7 @@ hobbies.forEach((hobby) => {
 });
 
 //Log and append on button click
+//A bit different than the .innerText property we changed in class
 function printNames() {
   console.log(first + " " + last);
   let para = document.createElement("p");
