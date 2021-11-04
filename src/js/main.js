@@ -2,6 +2,7 @@ let first = "Christian";
 let last = "Vallat";
 let button = document.getElementById("name");
 const div = document.getElementById("div1");
+let ul = document.querySelector("ul");
 
 let hobbies = [
   "Watching my favorite sports teams",
@@ -9,11 +10,11 @@ let hobbies = [
   "Listening to country music",
 ];
 
-//Log on page load
-console.log("Hi, my name is " + first + " " + last);
-console.log("Some of my favorite hobbies include:");
+//Append on page load
 hobbies.forEach((hobby) => {
-  console.log(hobby);
+  li = document.createElement("li");
+  li.innerText = hobby;
+  ul.appendChild(li);
 });
 
 //Log and append on button click
